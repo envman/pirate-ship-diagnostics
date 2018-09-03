@@ -1,0 +1,22 @@
+{
+  "name": "onion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envman/onion-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/envman/onion-js/issues"
+  },
+  "homepage": "https://github.com/envman/onion-js#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
