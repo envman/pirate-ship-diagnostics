@@ -9,10 +9,10 @@ if (args[1] && args[1] == 'bonus') {
   bonusMode = true
 }
 
-let url = 'http://localhost:1337/installpackagescore'
+let url = 'http://192.168.0.14:1337/installpackagescore'
 
 if (bonusMode) {
-  url = 'http://localhost:1337/installpackagescoreboooonus'
+  url = 'http://192.168.0.14:1337/installpackagescoreboooonus'
 }
 
 request({
