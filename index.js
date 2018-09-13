@@ -9,10 +9,10 @@ if (args[1] && args[1] == 'bonus') {
   bonusMode = true
 }
 
-let url = 'http://localhost:8080/installpackagescore'
+let url = 'http://localhost:1337/installpackagescore'
 
 if (bonusMode) {
-  url = 'http://localhost:8080/installpackagescoreboooonus'
+  url = 'http://localhost:1337/installpackagescoreboooonus'
 }
 
 request({
@@ -29,5 +29,5 @@ request({
     console.log('oh poop', body)
   }
 
-  console.log('program executed sucessfully')
+  console.log(body)
 })
