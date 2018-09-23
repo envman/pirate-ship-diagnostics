@@ -1,5 +1,5 @@
 {
-  "name": "onion",
+  "name": "pirate-ship-diagnostics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/envman/onion-js.git"
+    "url": "git+https://github.com/envman/pirate-ship-diagnostics.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/envman/onion-js/issues"
+    "url": "https://github.com/envman/pirate-ship-diagnostics/issues"
   },
-  "homepage": "https://github.com/envman/onion-js#readme",
+  "homepage": "https://github.com/envman/pirate-ship-diagnostics#readme",
   "dependencies": {
     "request": "^2.88.0"
   }

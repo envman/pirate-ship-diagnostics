@@ -1,4 +1,5 @@
 const request = require('request')
+const server = require('./server')
 
 const args = process.argv.slice(2, process.argv.length)
 const userId = args[0]
@@ -9,10 +10,10 @@ if (args[1] && args[1] == 'bonus') {
   bonusMode = true
 }
 
-let url = 'http://192.168.0.14:1337/installpackagescore'
+let url = `${server}/installpackagescore`
 
 if (bonusMode) {
-  url = 'http://192.168.0.14:1337/installpackagescoreboooonus'
+  url = `${server}/installpackagescoreboooonus`
 }
 
 request({
@@ -26,7 +27,7 @@ request({
   if (err) return console.error(err)
 
   if (response.statusCode !== 200) {
-    console.log('oh poop', body)
+    return console.error(`Problem Diagnosing Pirate Ship ${response.statusCode}`, body)
   }
 
   console.log(body)
