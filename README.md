@@ -6,4 +6,4 @@ Clone the repo using git!
 git clone https://github.com/envman/pirate-ship-diagnostics.git
 ```
 
-Then install the packages using npm, then run using node from the command line and pass in your shipmate ID!
+Then install the packages using npm, then run using node from the command line!

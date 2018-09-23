@@ -2,10 +2,9 @@ const request = require('request')
 const server = require('./server')
 
 const args = process.argv.slice(2, process.argv.length)
-const userId = args[0]
 
 let bonusMode
-if (args[1] && args[1] == 'bonus') {
+if (args[0] && args[0] == 'bonus') {
 
   bonusMode = true
 }
