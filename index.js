@@ -20,7 +20,6 @@ request({
   url,
   json: true,
   body: {
-    user: userId
   }
 }, (err, response, body) => {
   if (err) return console.error(err)
