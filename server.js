@@ -1,1 +1,1 @@
-module.exports = 'http://172.16.100.102:1337'
+module.exports = 'http://192.168.0.102:1337'
