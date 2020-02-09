@@ -1,32 +1,29 @@
 const request = require('request')
-const server = require('./server')
 
 const args = process.argv.slice(2, process.argv.length)
 
 let bonusMode
 if (args[0] && args[0] == 'bonus') {
-
   bonusMode = true
 }
 
-let url = `${server}/installpackagescore`
+const challenge = (level, challenge) => new Promise((resolve, reject) => {
+  request.post('http://localhost:5000/sailing', {
+    method: 'POST',
+    json: true,
+    body: {
+      level,
+      challenge
+    }
+  }, (err, response, body) => {
+    if (err) return reject(err)
+
+    resolve(body)
+  })
+})
 
 if (bonusMode) {
-  url = `${server}/installpackagescoreboooonus`
+  challenge('Package Port', 'Zx3S4Iwu')
+} else {
+  challenge('Package Port', 'W-EhWiLF')
 }
-
-request({
-  method: 'POST',
-  url,
-  json: true,
-  body: {
-  }
-}, (err, response, body) => {
-  if (err) return console.error(err)
-
-  if (response.statusCode !== 200) {
-    return console.error(`Problem Diagnosing Pirate Ship ${response.statusCode}`, body)
-  }
-
-  console.log(body)
-})
