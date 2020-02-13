@@ -23,7 +23,7 @@ const challenge = (level, challenge) => new Promise((resolve, reject) => {
 })
 
 if (bonusMode) {
-  challenge('Package Port', 'Zx3S4Iwu')
-} else {
   challenge('Package Port', 'W-EhWiLF')
+} else {
+  challenge('Package Port', 'Zx3S4Iwu')
 }
